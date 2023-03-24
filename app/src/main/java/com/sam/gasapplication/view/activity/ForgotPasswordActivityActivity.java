@@ -192,8 +192,11 @@ public class ForgotPasswordActivityActivity extends AppCompatActivity {
                                 userId = checkUserAccountModel.getUser_id();
                                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 
+
+                                String mobileNumberData = remove_zero(user_phoennumber_edittext.getText().toString());
+
                                // startPhoneNumberVerification("+91"+user_phoennumber_edittext.getText().toString());
-                                startPhoneNumberVerification("+27"+user_phoennumber_edittext.getText().toString());
+                                startPhoneNumberVerification("+27"+mobileNumberData);
 
                             } else {
                                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
@@ -259,6 +262,14 @@ public class ForgotPasswordActivityActivity extends AppCompatActivity {
 
 
         }
+
+    private String remove_zero(String str) {
+
+        StringBuffer sb = new StringBuffer(str);
+        while (sb.length()>1 && sb.charAt(0) == '0')
+            sb.deleteCharAt(0);
+        return sb.toString();  // return in String
+    }
 
     private boolean validation() {
 
