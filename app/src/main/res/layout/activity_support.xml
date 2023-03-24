@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.activity.SupportActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menubar_layoout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/support"
+            android:textSize="@dimen/heading_text_20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_arrow_support"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:src="@drawable/arrow_back"
+
+            app:layout_constraintHorizontal_bias="0.05"
+
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:src="@drawable/main_logo"
+        app:layout_constraintHeight_percent="0.2"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintVertical_bias="0.9"
+        android:elevation="4dp"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintVertical_bias="0.8">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.05"
+            android:gravity="center"
+
+            app:layout_constraintWidth_percent="0.9"
+
+            android:text="Want us to contact you"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            >
+
+
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintHeight_percent="0.7"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/custom_bg2"
+
+                app:layout_constraintBottom_toTopOf="@+id/user_email_CF"
+
+
+                android:id="@+id/user_name_CF"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.9"
+
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_name_CU"
+                    app:layout_constraintWidth_percent="0.9"
+                    android:background="@null"
+                    android:hint="Name"
+
+                    android:textStyle="normal"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/email_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_name_CF"
+
+                app:layout_constraintBottom_toTopOf="@+id/phone_number_layout"
+                android:background="@drawable/custom_bg2"
+
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.9"
+
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/user_email_CF"
+
+                    app:layout_constraintWidth_percent="0.9"
+                    android:inputType="textEmailAddress"
+                    android:background="@null"
+                    android:hint="Email"
+                    android:textStyle="normal"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    >
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/phone_number_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_layout"
+
+                app:layout_constraintBottom_toTopOf="@+id/user_message_CF"
+                android:background="@drawable/custom_bg2"
+
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintWidth_percent="0.9"
+
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:textColor="@color/black"
+                    android:id="@+id/phone_number_CF"
+
+                    app:layout_constraintWidth_percent="0.9"
+                    android:inputType="textEmailAddress"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:textStyle="normal"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    >
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number_CF"
+
+                android:background="@drawable/custom_bg2"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:id="@+id/user_message_CF"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintWidth_percent="0.9"
+
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_messages_CF"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    app:layout_constraintWidth_percent="0.9"
+                    android:background="@null"
+                    android:hint="Message"
+                    android:textStyle="normal"
+                    android:textSize="14dp">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_contact_us_form_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+          android:background="@drawable/custom_button_bg"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.93"
+            app:layout_constraintWidth_percent="0.4">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

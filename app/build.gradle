@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.sam.gasapplication"
+        minSdk 21
+        targetSdk 32
+        versionCode 7
+        versionName "1.6"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+def lifecycleExtensionVersion = '1.1.1'
+def butterknifeVersion = '10.1.0'
+def supportVersion = '29.0.0'
+def retrofitVersion = '2.8.2'
+def glideVersion = '4.11.0'
+def rxJavaVersion = '2.1.1'
+def daggerVersion = '2.14.1'
+def mockitoVersion = '2.11.0'
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "com.android.support:design:$supportVersion"
+
+    implementation "android.arch.lifecycle:extensions:$lifecycleExtensionVersion"
+
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    testImplementation "org.mockito:mockito-inline:$mockitoVersion"
+    testImplementation "android.arch.core:core-testing:1.1.1"
+
+    // Circle Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+
+
+    //Sliding menu
+    implementation 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'
+
+    //stebview
+    implementation 'com.shuhart.stepview:stepview:1.2.6'
+
+    // Firebase
+
+    implementation 'com.google.firebase:firebase-messaging:20.2.3'
+    implementation "com.google.firebase:firebase-analytics:17.4.4"
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'com.google.firebase:firebase-core:9.6.1'
+
+
+    //OTP
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'com.android.support:multidex:2.0.1'
+
+    // google map
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    //fix
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation project(':AddressPicker')
+
+
+    // progress bar
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+
+    // route map
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
+  //  implementation 'com.google.maps:google-maps-services:(insert latest version)'
+    implementation 'com.google.maps:google-maps-services:2.1.2'
+
+}
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'

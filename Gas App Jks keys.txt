@@ -1,0 +1,3 @@
+Key alias : gasapp
+Key password : gasapp
+Key store password  : gasapp

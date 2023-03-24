@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.PlaceOrderFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:weightSum="16"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Weight"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_text_14sp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Price"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_text_14sp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Quantity"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_text_14sp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Total"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_text_14sp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    android:weightSum="8"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="14 Kg"
+        android:gravity="center"
+        android:textSize="@dimen/normal_text_12sp"
+
+        android:background="@drawable/custom_bg_cell_border"
+        ></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="715.25 INR"
+        android:gravity="center"
+        android:textSize="@dimen/normal_text_12sp"
+        android:background="@drawable/custom_bg_cell_border"
+        ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/custom_bg_cell_border"
+        android:weightSum="13"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_add_24"
+            app:tint="@color/dark_blue"
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quantity_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:text="0"
+            android:textSize="@dimen/normal_text_12sp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/remove"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            app:tint="@color/dark_blue"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_remove_24"
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/total_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="00.00"
+        android:gravity="center"
+        android:textSize="@dimen/normal_text_12sp"
+        android:background="@drawable/custom_bg_cell_border"
+        ></androidx.appcompat.widget.AppCompatTextView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintVertical_bias="0.87"
+            android:background="@color/dark_ehite"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sdkfjkls"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:text="Total Amount"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                  android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="60254.25 INR"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/dsfsdf"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/sdkfjkls"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:text="Pay"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Cash"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_text_14sp"
+                        android:textStyle="bold"
+
+                        ></androidx.appcompat.widget.AppCompatTextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/place_order_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:text="@string/place_order"
+            app:layout_constraintVertical_bias="0.95"
+            android:background="@drawable/custom_button_bg"
+            app:layout_constraintWidth_percent="0.9"
+            ></androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

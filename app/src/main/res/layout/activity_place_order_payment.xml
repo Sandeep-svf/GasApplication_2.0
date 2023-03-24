@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.PlaceOrderFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menubar_layoout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/payment_method"
+            android:textSize="@dimen/heading_text_20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/place_order_back_arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:src="@drawable/arrow_back"
+
+            app:layout_constraintHorizontal_bias="0.05"
+
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="10"
+        android:textStyle="bold"
+        android:textSize="@dimen/heading_text_16sp"
+
+
+        android:text="Payment method"
+
+        ></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="10"
+        android:background="@drawable/custom_bg_border_line"
+
+
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            >
+            <RadioButton
+                android:id="@+id/cod_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/dark_blue"
+                android:buttonTint="@color/dark_blue"
+                ></RadioButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Pay On Delivery/Cash On Delivery"
+                android:textSize="@dimen/heading_text_14sp"
+                android:textStyle="bold"
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_margin="2dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+
+        android:background="@drawable/custom_bg_border_line"
+
+
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/payment_cover_image"
+
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Pay using Payfast by network"
+                android:textSize="@dimen/heading_text_14sp"
+                android:textStyle="bold"
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintVertical_bias="0.87"
+            android:background="@color/dark_ehite"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sdkfjkls"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:text="Total Amount"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/total_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="0000.00 INR"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_text_14sp"
+                        android:textStyle="bold"
+
+                        ></androidx.appcompat.widget.AppCompatTextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/delivery_charge_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:weightSum="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/sdkfjkls"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:text="Delivery Charge"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/delivery_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="00.00 INR"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_text_14sp"
+                        android:textStyle="bold"
+
+                        ></androidx.appcompat.widget.AppCompatTextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/dsfsdf"
+
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/delivery_charge_layout"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:text="Pay with"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/heading_text_14sp"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/payment_mode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="PayFast by Network"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_text_14sp"
+                        android:textStyle="bold"
+
+                        ></androidx.appcompat.widget.AppCompatTextView>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/place_order_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:text="@string/place_order"
+            app:layout_constraintVertical_bias="0.95"
+            android:background="@drawable/custom_button_bg"
+            app:layout_constraintWidth_percent="0.9"
+            ></androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

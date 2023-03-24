@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GasApplication</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">REGISTER</string>
+    <string name="check_price">Check Price</string>
+    <string name="manage_profile">Manage Profile</string>
+    <string name="place_order">Place Order</string>
+    <string name="setting">Settings</string>
+    <string name="order_history">Order History</string>
+    <string name="see_order_status">Order Status</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="my_profile">My Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="home">Home</string>
+    <string name="chang_password">Change Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="place_id" translatable="false">AIzaSyBr4fC60qcaJzTdfJJLWdIRDjXy9IohH4s</string>
+    <string name="google_maps_key">AIzaSyBr4fC60qcaJzTdfJJLWdIRDjXy9IohH4s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit">Submit</string>
+    <string name="notification">Notification</string>
+    <string name="update_password">Update Password</string>
+    <string name="weight">Weight</string>
+    <string name="price">Price</string>
+    <string name="your_position">Your Position</string>
+    <string name="total_ammount">Total Ammount</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payfast_payment_getway">PayFast Payment Gateway</string>
+    <string name="clear_all">Clear All</string>
+    <string name="selecct_location_from_map">Select location from map</string>
+    <string name="order_list">Order List</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="route">Map</string>
+</resources>

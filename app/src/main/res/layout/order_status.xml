@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintWidth_percent="0.93"
+        android:orientation="vertical"
+
+        android:background="@drawable/custom_order_history_bg"
+
+
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Order ID"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/order_id_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="4111FRC"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="Sandeep Maurya"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+            android:visibility="gone"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Phone Number"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="965487XXXX"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+android:visibility="gone"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Address"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="saviour Greenarch, Greater Noida, UP"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+android:visibility="gone"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="weight"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/weight_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="180 KG"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Pay Ammount"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pay_amount_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="295.00 INR"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Status"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/order_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="4"
+                android:text="Processing"
+                android:textColor="@color/teal_700"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/product_detials_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="View Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_12sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_bg_otw"
+                ></androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:layout_weight="9"
+
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Processing"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="On the way"
+                android:layout_weight="3"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:text="Delivered"
+                    android:layout_weight="3"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/your_state_progress_bar_id"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            app:spb_currentStateNumber="three"
+            app:spb_maxStateNumber="three"
+            app:spb_stateBackgroundColor="#BDBDBD"
+            app:spb_stateForegroundColor="@color/dark_blue"
+            app:spb_stateNumberBackgroundColor="#808080"
+            app:spb_stateNumberForegroundColor="#eeeeee"
+            app:spb_currentStateDescriptionColor="@color/dark_blue"
+            app:spb_stateDescriptionColor="#808080"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/address_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.05"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_text_14sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.9"
+
+            android:background="@drawable/custom_bg_cancel"
+            android:text="@string/cancel_order"
+            app:layout_constraintWidth_percent="0.5"
+
+            ></androidx.appcompat.widget.AppCompatButton>
+        <!--<com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:sv_selectedCircleColor="@color/blue"
+            app:sv_selectedTextColor="@color/blue"
+            app:sv_stepLineWidth="1dp"
+            app:sv_stepPadding="4dp"
+            app:sv_stepsNumber="3"
+            app:sv_nextTextColor="@color/blue"
+            app:sv_nextStepLineColor="@color/blue"
+            app:sv_doneCircleColor="@color/blue"
+            app:sv_doneStepLineColor="@color/blue"
+            app:sv_doneCircleRadius="12dp"
+            app:sv_selectedCircleRadius="12dp"
+            app:sv_selectedStepNumberColor="@color/white"
+            app:sv_stepViewStyle="@style/StepView"
+            app:sv_doneStepMarkColor="@color/dark_blue"
+            app:sv_stepNumberTextSize="12sp"
+            app:sv_animationType="Line" />-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

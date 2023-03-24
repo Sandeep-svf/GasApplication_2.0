@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sam.gasapplication">
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+   <!-- <uses-permission android:name="android.permission.READ_SMS" />-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GasApplication">
+       <!-- <activity
+            android:name=".utility.RouteMapActivity"
+            android:exported="true" >
+
+
+
+        </activity>-->
+        <activity
+            android:name=".delivery.activity.OrderDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".delivery.activity.ManageProfileDpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".delivery.activity.NotificationDpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".delivery.activity.OrderHistoryDpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".delivery.activity.OrderListDpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".delivery.activity.DashboardDPActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activity.PlaceOrderPaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".utility.BookingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".utility.SearchMapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".utility.MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.ForgotPasswordActivityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.OrderPlacedSplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.PlaceOrderAddressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.WebActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.SupportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activity.MyProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- fb login meta data -->
+        <!--
+   <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/place_id" />
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

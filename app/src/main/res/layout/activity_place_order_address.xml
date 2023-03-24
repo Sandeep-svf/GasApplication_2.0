@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.PlaceOrderAddressActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menubar_layoout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/place_order"
+            android:textSize="@dimen/heading_text_20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/place_order_back_arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:src="@drawable/arrow_back"
+
+            app:layout_constraintHorizontal_bias="0.05"
+
+            ></androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubar_layoout"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading_text_16sp"
+            android:gravity="center"
+            android:visibility="gone"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:text="Delivery address"
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/name_cd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent="0.9"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/card_corner_radious"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:weightSum="10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/user"
+                    android:padding="5dp"
+                    android:tint="@color/dark_blue"
+                    android:layout_weight="2"
+
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/username_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="Please enter name"
+                    android:textSize="@dimen/heading_text_14sp"
+                    ></androidx.appcompat.widget.AppCompatEditText>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/phone_cd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintWidth_percent="0.9"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/card_corner_radious"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:weightSum="10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/phone_call"
+                    android:padding="5dp"
+                    android:tint="@color/dark_blue"
+                    android:layout_weight="2"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/phone_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="Please enter phone number"
+                    android:textSize="@dimen/heading_text_14sp"
+                    ></androidx.appcompat.widget.AppCompatEditText>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/address_cd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintWidth_percent="0.9"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/card_corner_radious"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:weightSum="10"
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/location"
+                    android:layout_weight="2"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/current_location_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="Please enter address"
+                    android:textSize="@dimen/heading_text_14sp"
+                    ></androidx.appcompat.widget.AppCompatEditText>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_lat_long_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.05"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_12sp"
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.9"
+
+            android:background="@drawable/custom_button_bg"
+            android:text="@string/selecct_location_from_map"
+            app:layout_constraintWidth_percent="0.5"
+
+            ></androidx.appcompat.widget.AppCompatButton>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/landmark_cd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.175"
+            app:layout_constraintWidth_percent="0.9"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/card_corner_radious"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:weightSum="10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/map_marker"
+                    android:padding="5dp"
+                    android:tint="@color/dark_blue"
+                    android:layout_weight="2"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/landmark_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="Please enter landmark/house no"
+                    android:textSize="@dimen/heading_text_14sp"
+                    ></androidx.appcompat.widget.AppCompatEditText>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/current_location_cd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/landmark_cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintWidth_percent="0.9"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/card_corner_radious"
+
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:weightSum="10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:padding="5dp"
+                    android:layout_weight="2"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Please select location from map"
+                    android:textSize="@dimen/heading_text_14sp"
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_address_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:text="Deliver to this address"
+            app:layout_constraintVertical_bias="0.6"
+            android:background="@drawable/custom_button_bg"
+            app:layout_constraintWidth_percent="0.8"
+            ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintWidth_percent="0.93"
+        android:orientation="vertical"
+
+        android:background="@drawable/custom_order_history_bg"
+
+
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Order ID"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/order_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="4111FRC"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Order Date"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/order_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="4111FRC"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+       <!-- <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="Sandeep Maurya"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Phone Number"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="965487XXXX"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Email ID"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="iamsammaurya@gmail.com"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Address"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="saviour Greenarch, Greater Noida, UP"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="weight"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/weight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="180 KG"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Price"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="295.00 INR"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Total Ammount"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="7"
+                android:text="795.25 INR"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="3"
+                android:text="Status"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="4"
+                android:text="Delivered"
+                android:textColor="@color/teal_700"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/heading_text_14sp"
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/product_detials_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="View Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_12sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_bg_otw"
+                ></androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
