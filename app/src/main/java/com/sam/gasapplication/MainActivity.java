@@ -493,9 +493,9 @@ public class MainActivity extends SlidingFragmentActivity implements View.OnClic
                 yesDialogLogout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        SharedPreferences getUserIdData = getSharedPreferences("AUTHENTICATION_FILE_NAME_DP", Context.MODE_PRIVATE);
+                        SharedPreferences getUserIdData = getSharedPreferences("AUTHENTICATION_FILE_NAME", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = getUserIdData.edit();
-                        editor.putString("UserID", "");
+                        editor.putString("userId", "");
                         editor.putString("accessToken", "");
                         editor.putString("refreshToken", "");
                         editor.apply();
