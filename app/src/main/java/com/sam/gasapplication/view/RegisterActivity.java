@@ -132,11 +132,6 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 
     private String remove_zero(String str) {
