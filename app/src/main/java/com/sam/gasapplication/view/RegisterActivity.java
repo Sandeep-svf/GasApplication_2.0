@@ -112,8 +112,14 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(validation()){
+
+                    // remove zero from start...
+                    String mobileNumberData = remove_zero(phone_edittext.getText().toString());
+                    Log.e("test_sam_mobile_number",mobileNumberData+"ok");
+
+
                     //startPhoneNumberVerification("+91"+phone_edittext.getText().toString());
-                    startPhoneNumberVerification("+27"+phone_edittext.getText().toString());
+                    startPhoneNumberVerification("+27"+mobileNumberData);
 
                 }
             }
@@ -132,6 +138,14 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
+
+    private String remove_zero(String str) {
+
+            StringBuffer sb = new StringBuffer(str);
+            while (sb.length()>1 && sb.charAt(0) == '0')
+                sb.deleteCharAt(0);
+            return sb.toString();  // return in String
+        }
 
     private void startPhoneNumberVerification(String s) {
 
